@@ -1,0 +1,59 @@
+/* Colores */
+aside {
+  width: 20%;
+  height: auto;
+  text-align: justify;
+  font-size: 3rem;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside ul li {
+  color: var(--bordo);
+}
+
+aside ul li a {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #f5f5ef;
+}
+
+.main-title {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  font-family: "Nunito", sans-serif;
+}
+
+body a {
+  text-decoration: none;
+  color: #000;
+}
+
+body a ul {
+  list-style: none;
+}
+
+/*mixin*/
+.par {
+  background-color: rgba(255, 235, 205, 0.644);
+}
+
+.impar {
+  background-color: #6969da;
+}
+
+/*  */
+/*# sourceMappingURL=style.css.map */

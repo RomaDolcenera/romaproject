@@ -1,0 +1,261 @@
+:root {
+  --celeste: #4295a5;
+  --azuleta: #005466;
+  --roseta: #fcd0aa;
+  --verduso: #f1faf6;
+  --musguito: #67cea5;
+  --salmonella: #fcc97b;
+  --bordo: #932610;
+  --naranjin: #c9471a;
+  --pielcita: #edc78d;
+}
+body {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  font-family: "Nunito", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+.image-navbar-logo {
+  border-radius: 10px;
+  width: 60px;
+}
+.navbar-search {
+  display: none;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+.image-main {
+  width: 100%;
+  height: 250px;
+  object-fit: justify;
+}
+.main-aside {
+  display: none;
+}
+/*Aplicando propiedad Hover a favoritos y card-content*/
+
+.favoritos:hover {
+  color: red;
+}
+
+.card-content:hover {
+  transform: scale(1.1);
+}
+
+.card-content-button {
+  width: 60%;
+  color: var(--verduso);
+  background-color: var(--musguito);
+  border-radius: 6px;
+  border-width: 0;
+  font-size: 15px;
+  border: none;
+  padding: 10px;
+  align-self: center;
+  text-align: center;
+  margin-top: 15px;
+}
+/*Aplicando animaciones al Button*/
+/*Aplicando propiedad Hover al button*/
+
+.card-content-button:hover {
+  background-color: #8ef0a7;
+  transform: scale(1.1);
+}
+
+/* Aplicando Bootstrap */
+.nxtz-carousel-container {
+  width: 50%;
+}
+
+.main-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.categorias-container {
+  margin-top: 10px;
+}
+.ofertas-container {
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.main-title {
+  color: rgb(10, 3, 2);
+  font-size: px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 10px;
+  word-spacing: 30x;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(235, 137, 137), 0 0 25px rgb(92, 92, 209),
+    0 0 5px rgb(74, 74, 167);
+}
+/* Esto es el Grid-content que contiene las cards de los productos*/
+
+.grid-container-main {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+}
+.card-content {
+  width: 80%;
+  height: 350px;
+  background-color: rgba(255, 235, 205, 0.644);
+  border-style: groove;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5%;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  padding: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.img-responsive {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+.card-title {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.card-author {
+  font-size: 12px;
+}
+.card-price {
+  margin-top: 15px;
+}
+
+/* START FOOTER */
+.footer {
+  background-color: #f5f5ef;
+  padding: 20px;
+}
+.nzxt-footer-container-row {
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-image-logo {
+  border-radius: 20%;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 50%;
+}
+
+.footer-bottom-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+/*aplicando display, flex-direction y justify-content*/
+
+/* aplicando display y justify-content*/
+
+.footer-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 11px;
+  padding: 0 15px;
+  margin-top: 25px;
+}
+/* Aplicando media queries a mobile */
+
+@media screen and (min-width: 316px) {
+  .nxtz-container-wide {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    background-color: hsl(335, 54%, 61%);
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    font-size: 1rem;
+  }
+  .navbar-search {
+    display: flex;
+  }
+  .image-navbar-logo {
+    width: 100px;
+  }
+  .grid-container-main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card-content {
+    height: auto;
+  }
+  .card-title {
+    font-size: 22px;
+  }
+  .card-author {
+    font-size: 22px;
+  }
+  .card-price {
+    font-size: 28px;
+  }
+}
+
+/* Aplicando media queries a monitores */
+@media screen and (min-width: 1200px) {
+  .navbar {
+    background-color: var(--musguito);
+    padding: 20px;
+    font-size: 1.5rem;
+    justify-content: space-around;
+  }
+  .image-navbar-logo {
+    width: 150px;
+  }
+  .main-aside {
+    display: flex;
+    flex-direction: column;
+  }
+  .nxtz-container-wide {
+    flex-direction: row;
+  }
+}
